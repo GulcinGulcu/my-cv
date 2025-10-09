@@ -171,7 +171,7 @@ function Body() {
               </View>
             ))}
             <Link
-              src="https://drive.google.com/drive/folders/13GSq3RQpEgu8heIiTlmEhClYkZ9WX6Jl?usp=drive_link"
+              src="https://drive.google.com/drive/folders/13GSq3RQpEgu8heIiTlmEhClYkZ9WX6Jl"
               style={{
                 color: "inherit",
                 flexDirection: "row",
