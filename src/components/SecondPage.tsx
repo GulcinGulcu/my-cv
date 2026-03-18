@@ -9,6 +9,8 @@ import experiences from "../../assets/experience.json";
 import { BulletListItem } from "./BulletListItem";
 import { Badge } from "./Badge";
 import { Keywords } from "./Keywords";
+import { Link } from "@react-pdf/renderer";
+import ExternalLinkIcon from "../icons/ExternalLinkIcon";
 
 export function SecondPage() {
   return (
@@ -30,6 +32,17 @@ export function SecondPage() {
                 <Text>
                   {experience.title} — {experience.company}
                 </Text>
+                {experience.projectLink && (
+                  <Link
+                    src={experience.projectLink}
+                    style={{
+                      color: "inherit",
+                      alignItems: "center",
+                    }}
+                  >
+                    <ExternalLinkIcon size={15} />
+                  </Link>
+                )}
               </SectionSubHeader>
               <Text style={{ fontStyle: "italic" }}>{experience.date}</Text>
               <Text>{experience.note}</Text>

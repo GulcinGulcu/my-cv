@@ -40,7 +40,7 @@ function Body() {
           <SectionHeader>
             <Text>Projects</Text>
           </SectionHeader>
-          <SectionBody style={{ flexDirection: "column", gap: 24 }}>
+          <SectionBody style={{ flexDirection: "column", gap: 13 }}>
             {projects.map((project, i) => (
               <View key={i} style={{ gap: 4 }}>
                 <SectionSubHeader>
@@ -82,7 +82,7 @@ function Body() {
         <Section>
           <SectionBody>
             <Link
-              src="https://portfolio-eta-lyart-79.vercel.app/"
+              src="https://my-portfolio-gulcin-gulcus-projects.vercel.app/"
               style={{
                 color: "inherit",
                 textDecoration: "none",
@@ -92,7 +92,7 @@ function Body() {
             >
               {" "}
               <Text>
-                Explore more → https://portfolio-eta-lyart-79.vercel.app/
+                Explore more → https://my-portfolio-gulcin-gulcus-projects.vercel.app/
               </Text>
             </Link>
           </SectionBody>
@@ -203,13 +203,13 @@ const styles = StyleSheet.create({
   sectionLeft: {
     width: "60%",
     padding: "20 20 20 30",
-    gap: 20,
+    gap: 15,
   },
   sectionRight: {
     width: "40%",
     backgroundColor: "#d6ccc2",
     padding: "20 30 20 20",
-    gap: 20,
+    gap: 15,
   },
 });
 

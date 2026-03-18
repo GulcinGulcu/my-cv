@@ -2,8 +2,9 @@
   {
     "title": "Frontend Developer",
     "company": "BURNR",
-    "date": "2025 May - Now",
+    "date": "2025 May - September",
     "location": "Remote",
+    "projectLink": "https://drive.google.com/drive/folders/1VFnZCH_QNZQPuz0z4NgoYMN5JG-HSkXX?usp=drive_link",
     "note": "A Developer who is responsible for building admin UI of fitness oriented social media app BURNR.",
     "bullets": [
       "Part of a small team in building a robust platform.",
@@ -19,7 +20,8 @@
       "Daisy UI",
       "JavaScript",
       "Git",
-      "Github"
+      "Github",
+      "Radix UI"
     ]
   },
   {

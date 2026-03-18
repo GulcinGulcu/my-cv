@@ -2,10 +2,27 @@ import { View, Text, Link } from "@react-pdf/renderer";
 import { StyleSheet } from "@react-pdf/renderer";
 import CoffeeIconPdf from "./../icons/CoffeeIconPdf";
 import ExternalLinkIcon from "../icons/ExternalLinkIcon";
+import { Image } from "@react-pdf/renderer";
+import profileImage from "./../../assets/me.jpg";
 
 function Header() {
   return (
     <View style={styles.header}>
+      <View
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+        }}
+      >
+        <Image
+          src={profileImage}
+          style={{
+            width: 100,
+            height: "100%",
+          }}
+        />
+      </View>
       <View style={styles.titleSection}>
         <Text style={styles.textName}>GULCIN GULCU</Text>
         <Text style={styles.textTitle}>Fullstack Developer</Text>
@@ -18,10 +35,10 @@ function Header() {
           }}
         >
           <Link
-            src="https://portfolio-eta-lyart-79.vercel.app/"
+            src="https://my-portfolio-gulcin-gulcus-projects.vercel.app/"
             style={styles.textLink}
           >
-            https://portfolio-eta-lyart-79.vercel.app/
+            https://my-portfolio-gulcin-gulcus-projects.vercel.app/
           </Link>
           <View
             style={{
@@ -40,20 +57,20 @@ function Header() {
         <Link
           src="https://www.linkedin.com/in/gulcin-gulcu-07a668178/"
           style={{
-                color: "#fffcf2",
-                fontSize: 10,
-                flexDirection: "row",
-                gap: 3,
-                alignItems: "center",
-              }}
+            color: "#fffcf2",
+            fontSize: 10,
+            flexDirection: "row",
+            gap: 3,
+            alignItems: "center",
+          }}
         >
           <Text>LinkedIn</Text>
           <ExternalLinkIcon size={9} color="#fffcf2" />
         </Link>
         <Text style={styles.textLocation}>Västerås, Sweden</Text>
         <View>
-          <Link src="mailto:gulcin_375@hotmail.com" style={styles.textLink}>
-            gulcin_375@hotmail.com
+          <Link src="mailto:gulcingulcu7@gmail.com" style={styles.textLink}>
+            gulcingulcu7@gmail.com
           </Link>
         </View>
         <View>
@@ -73,6 +90,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#333533",
     color: "#fffcf2",
     display: "flex",
+    position: "relative",
     flexDirection: "row",
   },
   titleSection: {
@@ -80,6 +98,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     flexGrow: 1,
     gap: 4,
+    marginLeft: 100,
   },
   titleSectionRight: {
     display: "flex",
